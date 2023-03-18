@@ -1,6 +1,7 @@
 body{
     height:100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -25,4 +26,8 @@ body{
     background-color: blue;
     border: solid 1px black;
     flex:auto;
+}
+
+.hover{
+    background-color: red;
 }
