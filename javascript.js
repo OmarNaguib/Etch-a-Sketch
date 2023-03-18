@@ -9,7 +9,7 @@ function createGrid(length=16) {
         row.classList.add("row")
         for (let i = 1;i<=16;i++) {
             let square = document.createElement("div");
-            square.addEventListener("mouseover",() => square.classList.toggle("hover"))
+            square.addEventListener("mouseover",() => colorSquare(square))
             square.classList.add("square")
             row.appendChild(square)
 
@@ -25,7 +25,17 @@ function changeGrid() {
     createGrid(length)
 }
 
+function colorSquare(square) {
+    if (colorMethod === "default") {square.classList.toggle("hover")}
+    if (colorMethod === "random")  {square.style.backgroundColor="#"+Math.floor(Math.random()*16777215).toString(16);}
+    
+}
+
 let newGridButton = document.querySelector("#newGrid")
 newGridButton.addEventListener("click",changeGrid)
+
+let colorMenu=document.querySelector("#colorMenu")
+let colorMethod = "default";
+colorMenu.addEventListener("change",()=>{colorMethod=colorMenu.value})
 
 createGrid();
