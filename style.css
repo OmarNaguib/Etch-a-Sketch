@@ -1,18 +1,28 @@
-.container{
+body{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
     display: flex;
     flex-direction: column;
+    height: 50%;
+    width: 50%;
+
     
 }
 
 .row{
     display: flex;
     border: solid 1px black;
+    flex:auto;
+
 }
 
 
 .square{
-    height: 5px;
-    width:5px;
     background-color: blue;
-    border: solid 1px black
+    border: solid 1px black;
+    flex:auto;
 }
