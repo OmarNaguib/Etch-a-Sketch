@@ -8,8 +8,9 @@ body{
 #container{
     display: flex;
     flex-direction: column;
-    height: 50%;
-    width: 50%;
+    aspect-ratio : 1 / 1;
+    max-height: 75%;
+    flex:auto;
 
     
 }
