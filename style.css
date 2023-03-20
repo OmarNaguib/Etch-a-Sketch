@@ -17,18 +17,16 @@ body{
 
 .row{
     display: flex;
-    /* border: solid 1px black; */
     flex:auto;
 
 }
 
 
 .square{
-    background-color: blue;
-    /* border: solid 1px black; */
+    background-color: red;
     flex:auto;
 }
 
 .hover{
-    background-color: red;
+    background-color: blue;
 }
