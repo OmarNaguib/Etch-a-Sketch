@@ -9,8 +9,9 @@ body{
     display: flex;
     flex-direction: column;
     aspect-ratio : 1 / 1;
-    max-height: 75%;
+    max-height: 60%;
     flex:auto;
+    border: 2px burlywood solid;
 
     
 }
@@ -23,10 +24,10 @@ body{
 
 
 .square{
-    background-color: red;
+    background-color: white;
     flex:auto;
 }
 
 .hover{
-    background-color: blue;
+    background-color: black;
 }
