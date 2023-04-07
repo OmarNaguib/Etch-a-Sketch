@@ -26,7 +26,7 @@ function changeGrid() {
 }
 
 function colorSquare(square) {
-    if (colorMethod === "default") {square.classList.toggle("hover")}
+    if (colorMethod === "default") {square.classList.add("hover")}
     else if (colorMethod === "random")  {square.style.backgroundColor="#"+Math.floor(Math.random()*16777215).toString(16);}
     else {darken(square)}
 }
